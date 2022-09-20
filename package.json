@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "git": "git add . && cm_addlongname && git push",
     "dev": "vite",
     "build": "vite build"
   },
@@ -12,7 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "3.0.3",
-    "@vitejs/plugin-vue-jsx": "2.0.0"
+    "@vitejs/plugin-vue-jsx": "2.0.0",
+    "cm_addlongname": "^1.0.8"
   },
   "dependencies": {
     "vite": "^3.1.3",
