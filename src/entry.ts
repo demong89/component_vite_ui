@@ -10,6 +10,8 @@ export { MyButton, SFCButton, JSXButton };
 
 export default {
   install(app: App): void {
+    console.log('install xxx',MyButton);
+    
     app.component(MyButton.name, MyButton);
     app.component(SFCButton.name, SFCButton);
     app.component(JSXButton.name, JSXButton);
