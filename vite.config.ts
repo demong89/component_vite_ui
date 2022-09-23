@@ -22,6 +22,13 @@ export default defineConfig({
     }),
     Unocss(),
   ],
+  test:{
+    globals:true,
+    environment:'happy-dom',
+    transformMode:{
+      web:[/.[tj]sx$/]
+    }
+  },
   build: {
     rollupOptions,
     minify: false,
