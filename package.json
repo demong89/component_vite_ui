@@ -6,7 +6,10 @@
   "scripts": {
     "git": "git add . && cm_addlongname && git push",
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +19,9 @@
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
     "cm_addlongname": "^1.0.8",
-    "unocss": "0.45.6"
+    "unocss": "0.45.6",
+    "vitepress": "0.22.4",
+    "vitepress-theme-demoblock": "1.4.2"
   },
   "dependencies": {
     "vite": "^3.1.3",
