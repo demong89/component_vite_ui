@@ -45,7 +45,6 @@ export default defineComponent({
   name: "SButton",
   props,
   setup(props, { slots }) {
-
     const size = {
       small: {
         x: "2",
