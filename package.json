@@ -38,6 +38,7 @@
     "husky": "^8.0.1",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
+    "terser": "^5.15.0",
     "unocss": "0.45.6",
     "vitepress": "0.22.4",
     "vitepress-theme-demoblock": "1.4.2",

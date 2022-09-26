@@ -31,14 +31,17 @@ export default defineConfig({
   },
   build: {
     rollupOptions,
-    minify: false,
+    // minify: false,
+    minify: 'terser', // boolean | 'terser' | 'esbuild'
+    sourcemap: true, // 输出单独 source文件
+    reportCompressedSize: true,  // 生成压缩大小报告
     cssCodeSplit: true, 
     lib: {
       entry: "./src/entry.ts",
       name: "vueUI",
       fileName: "vue-ui",
       // 导出模块格式
-      formats: ["esm"],// "umd", "iife"
+      formats: ["es","umd","iife"],// "umd", "iife"
     },
   },
 });
