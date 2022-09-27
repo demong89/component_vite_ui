@@ -41,7 +41,7 @@ export default defineConfig({
       name: "vueUI",
       fileName: "vue-ui",
       // 导出模块格式
-      formats: ["es","umd","iife"],// "umd", "iife"
+      formats: ["es"],// "umd", "iife",
     },
   },
 });
