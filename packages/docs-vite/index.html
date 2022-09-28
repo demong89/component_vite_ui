@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>🔨 xx mo</h1>
+    <div id="app"></div>
+    <script type="module">
+        import style from "vue-ui-gxw/dist/style.css"
+        import { createApp } from "vue/dist/vue.esm-bundler.js";
+        import vueUI, { SFCButton, JSXButton,MyButton } from "vue-ui-gxw/dist/vue-ui.esm.js";
+        console.log(vueUI,MyButton);
+
+        createApp({
+            template: `
+        <div style="margin-bottom:20px;">
+            <MyButton color="blue">主要按钮</MyButton>
+            <MyButton color="green">绿色按钮</MyButton>
+            <MyButton color="gray">灰色按钮</MyButton>
+            <MyButton color="yellow">黄色按钮</MyButton>
+            <MyButton color="red">红色按钮</MyButton>
+        </div>
+        <div style="margin-bottom:20px;"
+        >
+            <MyButton color="blue" plain>朴素按钮</MyButton>
+            <MyButton color="green" plain>绿色按钮</MyButton>
+            <MyButton color="gray" plain>灰色按钮</MyButton>
+            <MyButton color="yellow" plain>黄色按钮</MyButton>
+            <MyButton color="red" plain>红色按钮</MyButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <MyButton size="small" plain>小按钮</MyButton>
+            <MyButton size="medium" plain>中按钮</MyButton>
+            <MyButton size="large" plain>大按钮</MyButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <MyButton color="blue" round plain icon="search">搜索按钮</MyButton>
+            <MyButton color="green" round plain icon="edit">编辑按钮</MyButton>
+            <MyButton color="gray" round plain icon="check">成功按钮</MyButton>
+            <MyButton color="yellow" round plain icon="message">提示按钮</MyButton>
+            <MyButton color="red" round plain icon="delete">删除按钮</MyButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <MyButton color="blue" round plain icon="search"></MyButton>
+            <MyButton color="green" round plain icon="edit"></MyButton>
+            <MyButton color="gray" round plain icon="check"></MyButton>
+            <MyButton color="yellow" round plain icon="message"></MyButton>
+            <MyButton color="red" round plain icon="delete"></MyButton>
+        </div>
+    `}).use(vueUI).mount('#app')
+
+    </script>
+</body>
+
+</html>

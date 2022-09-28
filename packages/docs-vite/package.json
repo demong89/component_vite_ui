@@ -1,0 +1,16 @@
+{
+  "name": "docs-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.40",
+    "vue-ui-gxw": "workspace:^1.0.0"
+  }
+}
