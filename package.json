@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://component-vite-ui-1gnd.vercel.app/",
   "scripts": {
     "git": "git add . && cm_addlongname && git push",
     "dev": "vite",
