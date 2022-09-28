@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 // import { presetUno, presetAttributify, presetIcons } from "unocss";
 // import Unocss from "unocss/vite";
-import Unocss from "../../config/unocss";
+import Unocss from "./config/unocss";
 // https://vitejs.dev/config/
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -37,5 +37,6 @@ export default defineConfig({
       // 导出模块格式
       formats: ["esm"], // "umd", "iife",
     },
+    outDir: "./dist"
   },
 });

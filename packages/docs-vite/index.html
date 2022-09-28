@@ -10,13 +10,15 @@
 
 <body>
 
-    <h1>🔨 xx mo</h1>
+    <h1>🔨 xx mo09</h1>
     <div id="app"></div>
     <script type="module">
-        import style from "vue-ui-gxw/dist/style.css"
+        import style from "vue-ui-gxw/dist/Button/style.css"
         import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import vueUI, { SFCButton, JSXButton,MyButton } from "vue-ui-gxw/dist/vue-ui.esm.js";
-        console.log(vueUI,MyButton);
+        // import vueUI, { SFCButton, JSXButton,MyButton } from "vue-ui-gxw/dist/vue-ui.esm.js";
+        import Button from 'vue-ui-gxw/dist/Button/index.esm.js'
+        // console.log(vueUI,MyButton);
+        console.log(Button);
 
         createApp({
             template: `
@@ -54,7 +56,7 @@
             <MyButton color="yellow" round plain icon="message"></MyButton>
             <MyButton color="red" round plain icon="delete"></MyButton>
         </div>
-    `}).use(vueUI).mount('#app')
+    `}).use(Button).mount('#app')
 
     </script>
 </body>
